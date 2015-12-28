@@ -42,6 +42,5 @@ def pca(data,nRedDim=0,normalise=1):
 			summation2+=data[i,j]**2
 	accuracy = summation1/summation2
 	print("accuracy = " + str(100-accuracy))
-	return c,y,evals,evecs
 iris= np.loadtxt('iris_proc.data',delimiter=',')
 pca(iris[:10,:4],1)
